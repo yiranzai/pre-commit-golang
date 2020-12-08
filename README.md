@@ -1,6 +1,4 @@
-
-pre-commit-golang
-=================
+# pre-commit-golang
 
 golang hooks for http://pre-commit.com/
 
@@ -25,6 +23,7 @@ Add this to your `.pre-commit-config.yaml`
         - id: go-unit-tests
         - id: go-build
         - id: go-mod-tidy
+        - id: goml-scan
 
 ### Available hooks
 
@@ -34,7 +33,7 @@ Add this to your `.pre-commit-config.yaml`
 - `go-imports` - Runs `goimports`, requires golang.org/x/tools/cmd/goimports
 - `go-cyclo` - Runs `gocyclo`, require https://github.com/fzipp/gocyclo
 - `validate-toml` - Runs `tomlv`, requires
-   https://github.com/BurntSushi/toml/tree/master/cmd/tomlv
+  https://github.com/BurntSushi/toml/tree/master/cmd/tomlv
 - `no-go-testing` - Checks that no files are using `testing.T`, if you want
   developers to use a different testing framework
 - `gometalinter` - run `gometalinter --config gometalinter.json ./...`
@@ -45,3 +44,4 @@ Add this to your `.pre-commit-config.yaml`
 - `go-build` - run `go build`, requires golang
 - `go-mod-tidy` - run `go mod tidy -v`, requires golang
 - `go-mod-vendor` - run `go mod vendor`, requires golang
+- `goml-scan` - Runs `goml_scan`
