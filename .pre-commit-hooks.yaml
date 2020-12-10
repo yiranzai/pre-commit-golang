@@ -93,3 +93,9 @@
   files: '\.go$'
   language: "script"
   description: "Runs `goml_scan`"
+- id: golines
+  name: "golines"
+  entry: run-golines.sh
+  files: '\.go$'
+  language: "script"
+  description: "Runs `golines -m 120 -w`"
