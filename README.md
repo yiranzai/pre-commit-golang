@@ -6,7 +6,7 @@ golang hooks for http://pre-commit.com/
 
 Add this to your `.pre-commit-config.yaml`
 
-    - repo: git://github.com/dnephin/pre-commit-golang
+    - repo: git://github.com/yiranzai/pre-commit-golang
       rev: master
       hooks:
         - id: go-fmt
@@ -23,7 +23,6 @@ Add this to your `.pre-commit-config.yaml`
         - id: go-unit-tests
         - id: go-build
         - id: go-mod-tidy
-        - id: goml-scan
 
 ### Available hooks
 
@@ -44,4 +43,3 @@ Add this to your `.pre-commit-config.yaml`
 - `go-build` - run `go build`, requires golang
 - `go-mod-tidy` - run `go mod tidy -v`, requires golang
 - `go-mod-vendor` - run `go mod vendor`, requires golang
-- `goml-scan` - Runs `goml_scan`

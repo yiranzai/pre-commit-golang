@@ -87,12 +87,6 @@
   files: '\.go$'
   language: "script"
   description: "Runs `go mod vendor`, requires golang"
-- id: goml-scan
-  name: "goml-scan"
-  entry: run-goml-scan.sh
-  files: '\.go$'
-  language: "script"
-  description: "Runs `goml_scan`"
 - id: golines
   name: "golines"
   entry: run-golines.sh
